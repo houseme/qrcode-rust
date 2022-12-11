@@ -48,8 +48,8 @@ pub struct Canvas<P: Element> {
 }
 
 impl<P: Element> Pixel for P {
-    type Canvas = Canvas<Self>;
     type Image = String;
+    type Canvas = Canvas<Self>;
 
     fn default_unit_size() -> (u32, u32) {
         (1, 1)
